@@ -3,7 +3,6 @@ const fs = require('fs')
 class ProductManager {
     #ruta = '../products.json'
     constructor () {
-        // this.products=[]
         this.path = this.#ruta
     }
 
@@ -23,7 +22,7 @@ class ProductManager {
             id=products[products.length-1].id+1
         }
 
-        let exists = products.find(pro = pro.code === code)
+        let exists = products.find(product => product.code === code)
         if (exists) {
             console.log(`el producto con codigo ${code} ya existe!!`)
             return
@@ -94,3 +93,8 @@ class ProductManager {
 
 const op = new ProductManager("./products.json")
 console.log(op.getProducts())
+op.deleteProduct(4)
+console.log(op.getProducts());
+op.updateProduct(1,{title: "otro", description:"otro prueba", price: 455, thumbnail:"", code:"aa4", stock:12})
+console.log(op.getProducts());
+console.log(op.addProduct(4,{title: "otro", description:"otro prueba", price: 455, thumbnail:"", code:"ab12", stock:12}));
