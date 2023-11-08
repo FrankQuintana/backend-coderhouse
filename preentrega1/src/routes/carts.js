@@ -7,14 +7,6 @@ const router = Router();
 const productManager = new ProductManager
 const cartManager = new CartManager
 
-router.get('/', async (req, res) => {
-    try {
-        const carts = await cartManager.getCartProducts()
-        res.status(200).json(carts);
-    } catch (error) {
-        res.status(500).json({error: 'Error de servidor'})
-    }
-});
 
 router.post('/', async (req, res) => {
     try {
