@@ -48,7 +48,7 @@ class CartManager {
 
             dataJS[cid - 1] = carro
 
-            await fs.promises.writeFile(this.path, `${JSON.stringify(dataJS, null, 5)}`, 'utf-8')
+            await fs.promises.writeFile(this.path, JSON.stringify(dataJS, null, 5), 'utf-8')
         } catch (error) {
             console.log(error);
         }

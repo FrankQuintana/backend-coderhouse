@@ -1,4 +1,4 @@
-// import { existsSync, promises } from 'fs'
+import { existsSync, promises } from 'fs'
 import fs from 'fs'
 // const fs = require('fs')
 

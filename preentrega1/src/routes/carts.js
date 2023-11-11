@@ -1,4 +1,4 @@
-import {Router} from 'express';
+import Router from 'express';
 import ProductManager from '../productManager.js';
 import CartManager from '../cartManager.js';
 
@@ -7,8 +7,18 @@ const router = Router();
 const productManager = new ProductManager
 const cartManager = new CartManager
 
+router.get('/', async (req, res) => {
+    try {
+        let carts = await cartManager.getCartProducts()
+        res.status(200).json({carts});
+    } catch (error) {
+        res.status(500).json({error: 'Error de servidor'})
+    }
+});
 
 router.post('/', async (req, res) => {
+    // await cartManager.createCart()
+    // res.send({mensaje: "carro creado"});
     try {
         const cart = await cartManager.createCart()
         if (cart) {
