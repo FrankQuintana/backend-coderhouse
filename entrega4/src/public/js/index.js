@@ -19,14 +19,14 @@ submitProduct.addEventListener('click', (e) => {
     e.preventDefault()
 
     let product = {
-        title = title.value,
-        description = description.value,
-        code = code.value,
-        price = price.value,
-        statusInput = statusInput.value,
-        stock = stock.value,
-        thumbnail = thumbnail.value,
-        category = category.value
+        title: title.value,
+        description: description.value,
+        code: code.value,
+        price: price.value,
+        statusInput: statusInput.value,
+        stock: stock.value,
+        thumbnail: thumbnail.value,
+        category: category.value
     }
     ioServer.emit('product', product)
 });

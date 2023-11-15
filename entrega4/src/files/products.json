@@ -5,8 +5,9 @@
           "description": "descripcion cuadro1",
           "price": 9999,
           "thumbnail": "https://google.com.ar",
-          "code": "ab10",
-          "stock": 10
+          "code": "1234",
+          "stock": 10,
+          "category":"war"
      },
      {
           "id": 2,
@@ -14,8 +15,9 @@
           "description": "descripcion cuadro2",
           "price": 9999,
           "thumbnail": "https://google.com.ar",
-          "code": "ab11",
-          "stock": 10
+          "code": "1234",
+          "stock": 10,
+          "category":"war"
      },
      {
           "id": 3,
@@ -23,8 +25,9 @@
           "description": "descripcion cuadro3",
           "price": 9999,
           "thumbnail": "https://google.com.ar",
-          "code": "ab12",
-          "stock": 10
+          "code": "1234",
+          "stock": 10,
+          "category":"war"
      },
      {
           "id": 4,
@@ -32,8 +35,9 @@
           "description": "descripcion cuadro4",
           "price": 9999,
           "thumbnail": "https://google.com.ar",
-          "code": "ab13",
-          "stock": 10
+          "code": "1234",
+          "stock": 10,
+          "category":"war" 
      },
      {
           "id": 5,
@@ -41,8 +45,9 @@
           "description": "descripcion cuadro5",
           "price": 9999,
           "thumbnail": "https://google.com.ar",
-          "code": "ab14",
-          "stock": 10
+          "code": "1234",
+          "stock": 10,
+          "category":"war"
      },
      {
           "id": 6,
@@ -50,17 +55,18 @@
           "description": "descripcion cuadro6",
           "price": 9999,
           "thumbnail": "https://google.com.ar",
-          "code": "ab15",
-          "stock": 10
+          "code": "1234",
+          "stock": 10,
+          "category":"war"
      },
      {
           "title": "cuadro7",
           "description": "cuadro de postman",
-          "price": "ab22",
-          "thumbnail": 7999,
-          "code": "true",
+          "price": 7999,
+          "thumbnail": "https://google.com.ar",
+          "code": "1234",
           "stock": 5,
-          "status": "links",
+          "status": "true",
           "category": "war",
           "id": 7
      }
