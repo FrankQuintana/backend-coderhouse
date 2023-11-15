@@ -1,0 +1,45 @@
+<div>
+    <h2>Agragar productos</h2>
+    <form>
+        <label>Titulo</label><br>
+        <input type="text" name="title" id="title"><br>
+
+        <label></label><br>
+        <input type="text" name="description" id="description"><br>
+
+        <label></label><br>
+        <input type="number" name="code" id="code"><br>
+
+        <label></label><br>
+        <input type="number" name="price" id="price"><br>
+
+        <label></label><br>
+        <input type="text" name="status" id="status"><br>
+
+        <label></label><br>
+        <input type="number" name="stock" id="stock"><br>
+
+        <label></label><br>
+        <input type="text" name="category" id="category"><br>
+
+        <label></label><br>
+        <input type="text" name="thumbnail" id="thumbnail"><br>
+
+        <input type="submit" id="submitproduct">
+    </form>
+
+    <h2>Elimine un producto</h2>
+    <form>
+        <label>Nombre del producto</label> <br>
+        <input type="text" name="title" id="titleDelete"><br>
+        <input type="submit" id="deleteProduct">
+    </form>
+
+    <h2>Todos lod productos</h2>
+
+    <div id="container"></div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../public/js/index.js"></script>
+{{!-- <script src="/socket.io/socket.io.js"></script>
+<script src="/entrega4/src/public/"></script> --}}
